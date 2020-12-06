@@ -1,4 +1,4 @@
-# ubuntu-sshd
+# ubuntu-sshd-cron
 
 Integrate SSH and CRON services and start automatically. Built on [Official Ubuntu](https://registry.hub.docker.com/_/ubuntu/) image.
 ## Image tags
