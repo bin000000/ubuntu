@@ -2,6 +2,7 @@ FROM       ubuntu:latest
 MAINTAINER binge "https://github.com/binge8/ubuntu-sshd-cron"
 
 ENV LANG C.UTF-8
+sed -i '$a\export LANG=C.UTF-8' /etc/profile
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
