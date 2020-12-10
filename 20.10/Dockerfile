@@ -1,6 +1,8 @@
 FROM       ubuntu:20.10
 MAINTAINER binge "https://github.com/binge8/ubuntu-sshd-cron"
 
+ENV LANGC.UTF-8
+
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
 openssh-server cron wget curl git vim sudo
