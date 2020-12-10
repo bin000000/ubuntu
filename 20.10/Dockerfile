@@ -2,7 +2,6 @@ FROM       ubuntu:20.10
 MAINTAINER binge "https://github.com/binge8/ubuntu-sshd-cron"
 
 ENV LANG C.UTF-8
-sed -i '$a\export LANG=C.UTF-8' /etc/profile
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
@@ -17,6 +16,7 @@ RUN echo 'root:root' |chpasswd
 
 RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
+RUN sed -i '$a\export LANG=C.UTF-8' /etc/profile
 
 RUN mkdir /root/.ssh
 
