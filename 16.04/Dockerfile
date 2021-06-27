@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
-openssh-server cron wget curl git vim sudo
+openssh-server cron wget curl git vim sudo ca-certificates
 
 RUN mkdir /var/run/sshd \
 mkdir /var/run/cron
