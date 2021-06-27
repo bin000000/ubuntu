@@ -1,5 +1,5 @@
 FROM       ubuntu:latest
-MAINTAINER binge "https://github.com/binge8/ubuntu-sshd-cron"
+MAINTAINER binge "https://github.com/binge8/ubuntu"
 
 ENV LANG C.UTF-8
 
